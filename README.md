@@ -1,7 +1,7 @@
 # react-plot-containers
 
 ## Demo
-https://twisttrl.github.io/react-plot-containers
+https://twisttrl.github.io/react-plot-containers/
 
 ## Example
 ```
