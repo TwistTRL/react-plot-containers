@@ -46,5 +46,5 @@ https://twisttrl.github.io/react-plot-containers/
 ```
 
 ## Features
-# CSS3 Grid based plot container components. 
-# Flexible (Use grid-area or position:"absolute" for custom positioning)
+* CSS3 Grid based plot container components. 
+* Flexible (Use grid-area or position:"absolute" for custom positioning)
