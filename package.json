@@ -1,7 +1,6 @@
 {
   "name": "react-plot-containers",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "memoize": "github:zhoulytwinyu/memoize"
   },
@@ -47,5 +46,20 @@
       "stage-0"
     ]
   },
-  "homepage": "https://twisttrl.github.io/react-plot-containers/"
+  "homepage": "https://twisttrl.github.io/react-plot-containers/",
+  "description": "## Demo https://twisttrl.github.io/react-plot-containers/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TwistTRL/react-plot-containers.git"
+  },
+  "keywords": [
+    "react",
+    "plot",
+    "grid"
+  ],
+  "author": "zhoulytwin@gmail.com",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/TwistTRL/react-plot-containers/issues"
+  }
 }
