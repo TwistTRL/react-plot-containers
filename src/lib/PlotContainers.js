@@ -1,8 +1,9 @@
 import React, {Component} from "react";
 import {memoize_one} from "memoize";
+import PropTypes from "prop-types";
 import "./PlotContainers.css";
 
-export class PlotContainer extends Component{
+class PlotContainer extends Component{
   render(){
     let { children,
           leftWidth,plotWidth,rightWidth,
@@ -33,7 +34,17 @@ export class PlotContainer extends Component{
   })
 }
 
-export const PlotSubContainer = (props)=>{
+PlotContainer.propTypes = {
+  children: PropTypes.node.isRequired,
+  leftWidth: PropTypes.number.isRequired,
+  plotWidth: PropTypes.number.isRequired,
+  rightWidth: PropTypes.number.isRequired,
+  topHeight: PropTypes.number.isRequired,
+  plotHeight: PropTypes.number.isRequired,
+  bottomHeight: PropTypes.number.isRequired,
+}
+
+const PlotSubContainer = (props)=>{
   return (
     <div className="PlotContainers-positionRelative">
       { props.children ? 
@@ -46,3 +57,9 @@ export const PlotSubContainer = (props)=>{
     </div>
   );
 }
+
+PlotSubContainer.propTypes = {
+  children: PropTypes.node,
+}
+
+export {PlotContainer,PlotSubContainer};
