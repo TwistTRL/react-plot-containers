@@ -13,6 +13,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _memoize = require("memoize");
 
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 require("./PlotContainers.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -23,7 +27,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var PlotContainer = exports.PlotContainer = function (_Component) {
+var PlotContainer = function (_Component) {
   _inherits(PlotContainer, _Component);
 
   function PlotContainer() {
@@ -75,7 +79,17 @@ var PlotContainer = exports.PlotContainer = function (_Component) {
   return PlotContainer;
 }(_react.Component);
 
-var PlotSubContainer = exports.PlotSubContainer = function PlotSubContainer(props) {
+PlotContainer.propTypes = {
+  children: _propTypes2.default.node.isRequired,
+  leftWidth: _propTypes2.default.number.isRequired,
+  plotWidth: _propTypes2.default.number.isRequired,
+  rightWidth: _propTypes2.default.number.isRequired,
+  topHeight: _propTypes2.default.number.isRequired,
+  plotHeight: _propTypes2.default.number.isRequired,
+  bottomHeight: _propTypes2.default.number.isRequired
+};
+
+var PlotSubContainer = function PlotSubContainer(props) {
   return _react2.default.createElement(
     "div",
     { className: "PlotContainers-positionRelative" },
@@ -88,3 +102,10 @@ var PlotSubContainer = exports.PlotSubContainer = function PlotSubContainer(prop
     }) : null
   );
 };
+
+PlotSubContainer.propTypes = {
+  children: _propTypes2.default.node
+};
+
+exports.PlotContainer = PlotContainer;
+exports.PlotSubContainer = PlotSubContainer;
