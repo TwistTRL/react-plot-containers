@@ -3,9 +3,17 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.PlotSubContainer = exports.PlotContainer = undefined;
+Object.defineProperty(exports, "PlotContainer", {
+  enumerable: true,
+  get: function get() {
+    return _PlotContainers.PlotContainer;
+  }
+});
+Object.defineProperty(exports, "PlotSubContainer", {
+  enumerable: true,
+  get: function get() {
+    return _PlotContainers.PlotSubContainer;
+  }
+});
 
 var _PlotContainers = require("./PlotContainers");
-
-exports.PlotContainer = _PlotContainers.PlotContainer;
-exports.PlotSubContainer = _PlotContainers.PlotSubContainer;
