@@ -5,44 +5,44 @@ https://twisttrl.github.io/react-plot-containers/
 
 ## Example
 ```
-        <PlotContainer  leftWidth={leftWidth}
-                        plotWidth={plotWidth}
-                        rightWidth={rightWidth}
-                        topHeight={topHeight}
-                        plotHeight={plotHeight}
-                        bottomHeight={bottomHeight}
-                        >
-          {/*===========================*/}
-          <PlotSubContainer>
-            {/*STUFF HERE*/}
-          </PlotSubContainer>
-          <PlotSubContainer>
-            {/*STUFF HERE*/}
-          </PlotSubContainer>
-          <PlotSubContainer>
-            {/*STUFF HERE*/}
-          </PlotSubContainer>
-          {/*===========================*/}
-          <PlotSubContainer>
-            {/*STUFF HERE*/}
-          </PlotSubContainer>
-          <PlotSubContainer>
-            {/*STUFF HERE*/}
-          </PlotSubContainer>
-          <PlotSubContainer>
-            {/*STUFF HERE*/}
-          </PlotSubContainer>
-          {/*===========================*/}
-          <PlotSubContainer>
-            {/*STUFF HERE*/}
-          </PlotSubContainer>
-          <PlotSubContainer>
-            {/*STUFF HERE*/}
-          </PlotSubContainer>
-          <PlotSubContainer>
-            {/*STUFF HERE*/}
-          </PlotSubContainer>
-        </PlotContainer>
+<PlotContainer  leftWidth={leftWidth}
+                plotWidth={plotWidth}
+                rightWidth={rightWidth}
+                topHeight={topHeight}
+                plotHeight={plotHeight}
+                bottomHeight={bottomHeight}
+                >
+  {/*===========================*/}
+  <PlotSubContainer>
+    {/*STUFF HERE*/}
+  </PlotSubContainer>
+  <PlotSubContainer>
+    {/*STUFF HERE*/}
+  </PlotSubContainer>
+  <PlotSubContainer>
+    {/*STUFF HERE*/}
+  </PlotSubContainer>
+  {/*===========================*/}
+  <PlotSubContainer>
+    {/*STUFF HERE*/}
+  </PlotSubContainer>
+  <PlotSubContainer>
+    {/*STUFF HERE*/}
+  </PlotSubContainer>
+  <PlotSubContainer>
+    {/*STUFF HERE*/}
+  </PlotSubContainer>
+  {/*===========================*/}
+  <PlotSubContainer>
+    {/*STUFF HERE*/}
+  </PlotSubContainer>
+  <PlotSubContainer>
+    {/*STUFF HERE*/}
+  </PlotSubContainer>
+  <PlotSubContainer>
+    {/*STUFF HERE*/}
+  </PlotSubContainer>
+</PlotContainer>
 ```
 
 ## Features
